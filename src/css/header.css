@@ -1,0 +1,57 @@
+.header {
+    display: block;
+    background-image: url(../img/pattern.svg);
+    background-color: var(--primary4);
+    height: 790px;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-left: 100vw solid transparent;
+    border-bottom: 3vw solid var(--primary3);
+}
+
+.header .header-top {
+    padding: 25px 60px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li + li {
+    margin-left: 40px;
+}
+
+.banner-text {
+    margin-top: 60px;
+}
+
+.banner-text p {
+    max-width: 600px;
+    line-height: var(--lineHeight18);
+    margin: 30px 0;
+}
+
+.display {
+    font-family: var(--fontDisplay);
+    font-size: 16em;
+    color: var(--primary3);
+}
+
+.banner {
+    position: relative;
+}
+
+.ilustration {
+    position: absolute;
+    right: 0px;
+    top: 60px;
+}
