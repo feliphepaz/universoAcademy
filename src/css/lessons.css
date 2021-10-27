@@ -1,0 +1,79 @@
+.lessons {
+    background: url(../img/estudos.png), linear-gradient(180deg, #1A1A5E 0%, #38D8FF 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 140px 0;
+}
+
+.lessons .container {
+    flex-direction: column;
+}
+
+.lessons .container > h2 {
+    font-size: var(--size48);
+    color: var(--base1);
+    margin-bottom: 60px;
+}
+
+.lessons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lessons-container div:first-child {
+    width: 50%;
+}
+
+.course-about {
+    margin-right: 60px;
+}
+
+.course-about p {
+    line-height: var(--lineHeight18);
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.course-about img {
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+}
+
+.course-progress {
+    position: relative;
+}
+
+.course-progress::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 75px;
+    left: -21px;
+    background: url(../img/line.png) center center no-repeat;
+    position: absolute;
+    top: -14px;
+}
+
+.course-progress h3 {
+    text-transform: capitalize;
+    color: var(--base1);
+    line-height: var(--lineHeight18);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.course-progress h3:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/constelacao.svg) center center no-repeat;
+    margin-right: 10px;
+}
+
+.course-progress h3:last-child {
+    margin-bottom: 0px;
+}

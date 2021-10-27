@@ -1,6 +1,6 @@
 .about {
     background: var(--primary1);
-    padding: 100px 0;
+    padding: 100px 0 140px 0;
     position: relative;
 }
 
@@ -12,7 +12,7 @@
     bottom: 0;
     position: absolute;
     border-left: 100vw solid transparent;
-    border-bottom: 3vw solid var(--primary3);
+    border-bottom: 3vw solid #1A1A5E;
 }
 
 .about-text h2 {

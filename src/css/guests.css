@@ -1,0 +1,70 @@
+.guests {
+    background: linear-gradient(0deg, rgba(0, 0, 58, 0.8), rgba(0, 0, 58, 0.8)), url(../img/astronomia.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 120px 0 100px 0;
+}
+
+.guests .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.guests .container > h2 {
+    font-size: var(--size48);
+    color: var(--base1);
+    margin-bottom: 60px;
+    margin-top: 5px;
+}
+
+.leaders {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leaders li {
+    display: block;
+    width: 232px;
+    height: 232px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.call {
+    margin: 40px auto 20px auto;
+}
+
+.guests .container .cta {
+    margin: 0 auto;
+}
+
+.leaders li:nth-child(5n+1) {
+    margin-left: 0px;
+}
+
+.leaders li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+.leaders li span {
+    line-height: var(--lineHeight10);
+    font-size: var(--size10);
+    color: var(--base1);
+    background: var(--primary3);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: -2px;
+    position: relative;
+}
+
+.leaders li h3 {
+    line-height: var(--lineHeight18);
+    color: var(--base1);
+    background: var(--primary4);
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+} 

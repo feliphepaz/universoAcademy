@@ -5,6 +5,8 @@ import './css/base.css'
 import Benefits from './Benefits';
 import About from './About';
 import Lessons from './Lessons';
+import Guests from './Guests';
+import Footer from './Footer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +14,8 @@ ReactDOM.render(
     <Benefits />
     <About />
     <Lessons />
+    <Guests />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
