@@ -1,6 +1,6 @@
 .header {
     display: block;
-    background-image: url(../img/pattern.svg);
+    background-image: url(../Assets/pattern.svg);
     background-color: var(--primary4);
     height: 790px;
     position: relative;

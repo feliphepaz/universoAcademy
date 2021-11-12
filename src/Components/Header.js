@@ -1,7 +1,7 @@
 import React from "react";
-import './css/header.css';
-import logo from './img/universoacademy.png';
-import ilustration from './img/astronauta.svg';
+import './Header.css';
+import logo from '../Assets/universoacademy.png';
+import ilustration from '../Assets/astronauta.svg';
 
 function Header() {
   return (

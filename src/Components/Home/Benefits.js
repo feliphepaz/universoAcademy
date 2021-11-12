@@ -1,10 +1,10 @@
 import React from 'react';
-import './css/benefits.css'
-import marte from './img/marte.png';
-import netuno from './img/netuno.png';
-import plutao from './img/plutao.png';
-import terra from './img/terra.png';
-import venus from './img/venus.png';
+import './Benefits.css'
+import marte from '../../Assets/marte.png';
+import netuno from '../../Assets/netuno.png';
+import plutao from '../../Assets/plutao.png';
+import terra from '../../Assets/terra.png';
+import venus from '../../Assets/venus.png';
 
 const Benefits = () => {
     return (

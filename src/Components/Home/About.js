@@ -1,6 +1,6 @@
 import React from 'react';
-import './css/about.css';
-import planet from './img/planeta.svg';
+import './About.css';
+import planet from '../../Assets/planeta.svg';
 
 const About = () => {
     return (

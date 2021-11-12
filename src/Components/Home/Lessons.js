@@ -1,6 +1,6 @@
 import React from 'react';
-import './css/lessons.css';
-import meteor from './img/meteorito.png';
+import './Lessons.css';
+import meteor from '../../Assets/meteorito.png';
 
 const modulos = ['introdução', 'contratando', 'integrando', 'desenvolvendo', 'gerenciando', 'promovendo/demitindo', 'oratória I', 'oratória II', 'comunicação assertiva', 'encerramento'];
 

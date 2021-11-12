@@ -1,5 +1,5 @@
 .lessons {
-    background: url(../img/estudos.png), linear-gradient(180deg, #1A1A5E 0%, #38D8FF 100%);
+    background: url(../../Assets/estudos.png), linear-gradient(180deg, #1A1A5E 0%, #38D8FF 100%);
     background-repeat: no-repeat;
     background-position: center;
     padding: 140px 0;
@@ -51,7 +51,7 @@
     height: 100%;
     width: 75px;
     left: -21px;
-    background: url(../img/line.png) center center no-repeat;
+    background: url(../../Assets/line.png) center center no-repeat;
     position: absolute;
     top: -14px;
 }
@@ -70,7 +70,7 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: url(../img/constelacao.svg) center center no-repeat;
+    background: url(../../Assets/constelacao.svg) center center no-repeat;
     margin-right: 10px;
 }
 

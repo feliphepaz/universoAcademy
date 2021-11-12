@@ -1,15 +1,15 @@
 import React from 'react';
-import './css/guests.css';
-import augusto from './img/lider1.png';
-import daniel from './img/lider2.png';
-import raj from './img/lider3.png';
-import cinthia from './img/lider4.png';
-import wilton from './img/lider5.png';
-import rogerio from './img/lider6.png';
-import beatriz from './img/lider7.png';
-import gustavo from './img/lider8.png';
-import carlos from './img/lider9.png';
-import edicleusa from './img/lider10.png';
+import './Guests.css';
+import augusto from '../../Assets/lider1.png';
+import daniel from '../../Assets/lider2.png';
+import raj from '../../Assets/lider3.png';
+import cinthia from '../../Assets/lider4.png';
+import wilton from '../../Assets/lider5.png';
+import rogerio from '../../Assets/lider6.png';
+import beatriz from '../../Assets/lider7.png';
+import gustavo from '../../Assets/lider8.png';
+import carlos from '../../Assets/lider9.png';
+import edicleusa from '../../Assets/lider10.png';
 
 const leaders = [
     {
