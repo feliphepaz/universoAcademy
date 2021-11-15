@@ -89,10 +89,12 @@ img {
 	--highLight: #F91C1C;
 	--fontMain: 'Montserrat', sans-serif;
 	--fontDisplay: 'Six Caps', sans-serif;
-	--size10: 0.625em;
-	--size18: 1.125em;
-	--size48: 3em;
-	--size72: 4.5em;
+	--size10: 0.625rem;
+	--size12: 0.75rem;
+	--size16: 1rem;
+	--size18: 1.125rem;
+	--size48: 3rem;
+	--size72: 4.5rem;
 	--lineHeight18: 27px;
 	--lineHeight10: 15px;
 }
@@ -112,5 +114,4 @@ a {
 .cta {
 	color: var(--base1);
 	background: var(--primary3);
-	box-shadow: 0px 0px 20px #00C1F0;
 }

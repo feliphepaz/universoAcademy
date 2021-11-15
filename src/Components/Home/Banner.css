@@ -1,0 +1,25 @@
+.banner-text {
+    margin-top: 60px;
+}
+
+.banner-text p {
+    max-width: 600px;
+    line-height: var(--lineHeight18);
+    margin: 30px 0;
+}
+
+.display {
+    font-family: var(--fontDisplay);
+    font-size: 16em;
+    color: var(--primary3);
+}
+
+.banner {
+    position: relative;
+}
+
+.ilustration {
+    position: absolute;
+    right: 0px;
+    top: 60px;
+}

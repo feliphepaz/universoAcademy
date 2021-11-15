@@ -3,20 +3,20 @@ import './App.css'
 import Header from './Components/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
-import Conta from './Components/Conta/Conta';
+import Account from './Components/Account/Account';
 import Footer from './Components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
     return (
         <div className='App'>
+            <Header mode={window.location.pathname === '/' ? 'expand' : 'default'} />
             <BrowserRouter>
-                <Header />
                     <main className='AppBody'>
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="login/*" element={<Login />} />
-                            <Route path="conta" element={<Conta />} />
+                            <Route path="conta" element={<Account />} />
                         </Routes>
                     </main>
                 <Footer />

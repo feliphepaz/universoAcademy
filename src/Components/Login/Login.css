@@ -1,0 +1,32 @@
+.login {
+  display: flex;
+  align-items: center;
+  background: var(--primary4);
+}
+
+.bg-img {
+  display: block;
+  background: url(../../Assets/orbita.jpg) no-repeat right;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+}
+
+.login-content {
+  margin: 0 auto;
+}
+
+.login-content h2 {
+  color: var(--base1);
+  font-size: var(--size48);
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.login-nav {
+  border: 4px solid var(--primary3);
+  padding: 40px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
