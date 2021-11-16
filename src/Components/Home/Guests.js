@@ -10,6 +10,7 @@ import beatriz from '../../Assets/lider7.png';
 import gustavo from '../../Assets/lider8.png';
 import carlos from '../../Assets/lider9.png';
 import edicleusa from '../../Assets/lider10.png';
+import { Link } from 'react-router-dom';
 
 const leaders = [
     {
@@ -70,7 +71,7 @@ const Guests = () => {
                     ))}
                 </ul>
                 <p className='call'>Não perca essa chance e se inscreva agora mesmo. É gratuito!</p>
-                <a className='cta' href='#'>Faça parte!</a>
+                <Link className='cta' to='login/cadastrar' onClick={() => window.scrollTo(0,0)}>Faça parte!</Link>
             </div>
         </section>
     )

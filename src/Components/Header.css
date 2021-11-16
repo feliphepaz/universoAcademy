@@ -32,3 +32,22 @@
 .menu ul li + li {
     margin-left: 40px;
 }
+
+.logged {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.username-header {
+    letter-spacing: 1px;
+    color: var(--base1);
+    font-size: var(--size12);
+    background: var(--primary3);
+    position: absolute;
+    top: -15px;
+    padding: 5px 10px;
+    border-radius: 15px;
+
+}

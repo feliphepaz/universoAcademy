@@ -24,7 +24,7 @@ const LoginPasswordLost = () => {
     return (
         <section className='login-nav animeRight'>
             <h2>Perdeu a senha?</h2>
-            {data ? <p style={{color: '#4c1'}}>{data}</p>
+            {data ? <form className='login-form'><p style={{color: '#4c1'}}>{data}</p></form>
             :
             <form action='' className='login-form' onSubmit={handleSubmit}>
                 <Input type='text' label='E-mail / Usuário' name='email' {...email} />

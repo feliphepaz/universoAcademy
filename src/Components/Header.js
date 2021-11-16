@@ -27,9 +27,12 @@ function Header() {
             </li>
             <li>
               {data ?
-                <Link className='btn' to='login' onClick={userLogout}>Sair</Link>
+                <div class='logged'>
+                  <legend class='username-header'>{data.username}</legend>
+                  <Link className='btn' to='login' onClick={userLogout}>Sair</Link>
+                </div>
                 :
-                <Link className='cta' to='login'>Faça parte!</Link>}
+                <Link className='cta' to='login/cadastrar'>Faça parte!</Link>}
             </li>
           </ul>
         </nav>
