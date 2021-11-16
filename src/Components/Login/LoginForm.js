@@ -1,31 +1,38 @@
 import React from 'react';
 import Input from '../Form/Input'
 import Button from '../Form/Button';
+import useForm from '../../Hooks/useForm';
+import { UserContext } from '../../UserContext';
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
-    const [username, setUsername] = React.useState('');
-    const [password, setPassword] = React.useState('');
+    const username = useForm();
+    const password = useForm();
+
+    const { userLogin, error, loading } = React.useContext(UserContext);
 
     async function handleSubmit(e) {
         e.preventDefault();
-        const response = await fetch('https://formulabor.com.br/universo-api/json/jwt-auth/v1/token', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ username, password }),
-        });
-        const resolve = await response.json();
-        console.log(resolve);
+
+        if (username.validate() && password.validate()) {
+            userLogin({username: username.value, password: password.value});
+        }
     }
 
-
     return (
-        <form action='' className='login-form' onSubmit={handleSubmit}>
-            <Input type='text' label='Usuário' name='usuario' value={username} change={({target}) => setUsername(target.value)} />
-            <Input type='password' label='Senha' name='senha' value={password} change={({target}) => setPassword(target.value)} />
-            <Button>Entrar</Button>
-        </form>
+        <section className='login-nav animeRight'>
+            <h2>Login</h2>
+            <form action='' className='login-form' onSubmit={handleSubmit}>
+                <Input type='text' label='Usuário' name='usuario' {...username} />
+                <Input type='password' label='Senha' name='senha' {...password} />
+                {loading ? <Button disabled>Carregando...</Button> : <Button>Entrar</Button>}
+                {error && <p className='error' style={{'marginTop': '10px', 'marginBottom' : '0px'}}>{error}</p>}
+            </form>
+            <div className='login-create-box'>
+                <p>Ainda não possui conta? Cadastre-se!</p>
+                <Link className='cta' to='cadastrar'>Cadastrar</Link>
+            </div>
+        </section>
     )
 }
 

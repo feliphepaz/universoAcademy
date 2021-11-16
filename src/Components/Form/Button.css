@@ -10,7 +10,14 @@
 }
 
 .button:hover, .button:focus {
+  outline: none;
   transition: .2s;
   box-shadow: 0px 0px 25px #00C1F0;
   cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+  box-shadow: none;
 }

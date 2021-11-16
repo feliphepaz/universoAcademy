@@ -6,20 +6,23 @@ import Login from './Components/Login/Login';
 import Account from './Components/Account/Account';
 import Footer from './Components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { UserStorage } from './UserContext';
 
 const App = () => {
     return (
         <div className='App'>
-            <Header mode={window.location.pathname === '/' ? 'expand' : 'default'} />
             <BrowserRouter>
-                    <main className='AppBody'>
-                        <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="login/*" element={<Login />} />
-                            <Route path="conta" element={<Account />} />
-                        </Routes>
-                    </main>
-                <Footer />
+                <UserStorage>
+                    <Header />
+                        <main className='AppBody'>
+                            <Routes>
+                                <Route path="/" element={<Home />} />
+                                <Route path="login/*" element={<Login />} />
+                                <Route path="conta" element={<Account />} />
+                            </Routes>
+                        </main>
+                    <Footer />
+                </UserStorage>
             </BrowserRouter>
         </div>
     )

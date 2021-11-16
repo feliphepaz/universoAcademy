@@ -20,13 +20,20 @@
   color: var(--base1);
   font-size: var(--size48);
   margin-bottom: 40px;
-  text-transform: capitalize;
 }
 
-.login-nav {
+.login-form {
   border: 4px solid var(--primary3);
   padding: 40px;
   width: 500px;
   margin: 0 auto;
   border-radius: 20px;
+}
+
+.login-create-box {
+  margin-top: 40px;
+}
+
+.login-create-box p {
+  margin-bottom: 40px;
 }
