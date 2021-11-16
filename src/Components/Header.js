@@ -8,22 +8,31 @@ import { UserContext } from "../UserContext";
 import { useLocation } from "react-router";
 
 function Header() {
-  const { data, userLogout } = React.useContext(UserContext);
+  const { data, userLogout, toTop } = React.useContext(UserContext);
+  const [ scroll, setScroll ] = React.useState(false);
   const location = useLocation();
 
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 600) {
+      setScroll(true)
+    } else {
+      setScroll(false)
+    }
+  });
+
   return (
-    <header className={location.pathname === '/' ? 'header expand' : 'header'}>
+    <header className={location.pathname === '/' && !scroll ? 'header expand' : 'header'}>
       <div className='container header-top'>
-        <Link to='/'><img src={logo} alt=''></img></Link>
+        <Link to='/' onClick={toTop}><img src={logo} alt=''></img></Link>
         <nav className='menu'>
           <ul>
             <li><Link to='/'>Saiba mais</Link></li>
             <li><Link to='/'>Tire suas dúvidas</Link></li>
             <li>
               {data ?
-                <Link className='btn' to='conta'>{data ? 'Ver aulas' : 'Login'}</Link>
+                <Link className='btn' to='conta' onClick={toTop}>{data ? 'Ver aulas' : 'Login'}</Link>
                 :
-                <Link className='btn' to='login'>Login</Link>}
+                <Link className='btn' to='login' onClick={toTop}>Login</Link>}
             </li>
             <li>
               {data ?
@@ -32,12 +41,11 @@ function Header() {
                   <Link className='btn' to='login' onClick={userLogout}>Sair</Link>
                 </div>
                 :
-                <Link className='cta' to='login/cadastrar'>Faça parte!</Link>}
+                <Link className='cta' to='login/cadastrar' onClick={toTop}>Faça parte!</Link>}
             </li>
           </ul>
         </nav>
       </div>
-      {location.pathname === '/' && <Banner />}
     </header>
   );
 }

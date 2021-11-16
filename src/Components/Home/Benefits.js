@@ -11,23 +11,23 @@ const Benefits = () => {
         <section className='benefits'>
             <div className='container'>
                 <ul className='benefits-itens'>
-                    <li>
+                    <li data-anime='top'>
                         <img src={marte}></img>
                         <span>+ de 20hrs de vídeo</span>
                     </li>
-                    <li>
+                    <li data-anime='down'>
                         <img src={netuno}></img>
                         <span>assista quando quiser</span>
                     </li>
-                    <li>
+                    <li data-anime='top'>
                         <img src={plutao}></img>
                         <span>acesso vitalício</span>
                     </li>
-                    <li>
+                    <li data-anime='down'>
                         <img src={terra}></img>
                         <span>parcele em até 12x</span>
                     </li>
-                    <li>
+                    <li data-anime='top'>
                         <img src={venus}></img>
                         <span>conteúdo enriquecedor</span>
                     </li>

@@ -7,7 +7,7 @@ const modulos = ['introdução', 'contratando', 'integrando', 'desenvolvendo', '
 const Lessons = () => {
     return (
         <section className='lessons'>
-            <div className='container'>
+            <div className='container' data-anime='down'>
                 <h2>Uma grade curricular pensada em você</h2>
                 <div className='lessons-container'>
                     <div className='course-about'>

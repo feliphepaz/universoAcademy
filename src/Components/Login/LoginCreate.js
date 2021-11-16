@@ -28,7 +28,7 @@ const LoginCreate = () => {
     }
 
     return (
-        <section className='login-nav animeRight'>
+        <section className='login-nav animate' data-anime='right'>
             <h2>Cadastre-se</h2>
             <form action='' className='login-form' onSubmit={handleSubmit}>
                 <Input type='text' label='Usuário' name='usuario' {...username} />

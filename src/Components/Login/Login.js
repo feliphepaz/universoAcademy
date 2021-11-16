@@ -13,7 +13,7 @@ const Login = () => {
     if (login === true) return <Navigate to="/conta" />
     return (
         <section className='login'>
-            <div className='bg-img'></div>
+            <div className='bg-img animate' data-anime='left'></div>
             <div className='login-content'>
                 <Routes>
                     <Route path='/' element={<LoginForm />} />

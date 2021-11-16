@@ -49,6 +49,42 @@
     padding-bottom: 35px;
 }
 
+.leaders li p {
+    position: absolute;
+    font-size: var(--size12);
+    background: var(--base2);
+    color: var(--base1);
+    letter-spacing: 1px;
+    padding: 20px;
+    height: 100%;
+    border-radius: 40px;
+    cursor: default;
+    opacity: 0;
+    border: 4px solid var(--primary3);
+}
+
+.leaders li:hover p {
+    opacity: 1;
+    transition: .5s;
+    box-shadow: 0px 0px 25px var(--primary3);
+}
+
+.leaders li:hover {
+    padding-bottom: 0px;
+}
+
+.leaders li:hover h3 {
+    border-radius: 0px 0px 40px 40px;
+    position: relative;
+    z-index: 500;
+    background: var(--primary3) !important;
+}
+
+.leaders li:hover span {
+    position: relative;
+    z-index: 1000;
+}
+
 .leaders li span {
     line-height: var(--lineHeight10);
     font-size: var(--size10);
@@ -57,7 +93,6 @@
     padding: 5px;
     border-radius: 5px;
     margin-bottom: -2px;
-    position: relative;
 }
 
 .leaders li h3 {

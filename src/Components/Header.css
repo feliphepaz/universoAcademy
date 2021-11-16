@@ -1,23 +1,10 @@
 .header {
     display: block;
     background-color: var(--primary4);
-}
-
-.header.expand {
-    background-image: url(../Assets/pattern.svg);
-    height: 790px;
-    position: relative;
-}
-
-.header.expand::after {
-    content: '';
-    width: 0;
-    height: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    border-left: 100vw solid transparent;
-    border-bottom: 3vw solid var(--primary3);
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    box-shadow: 0px 0px 15px var(--base2);
 }
 
 .header .header-top {

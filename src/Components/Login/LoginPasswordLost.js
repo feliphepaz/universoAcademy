@@ -22,7 +22,7 @@ const LoginPasswordLost = () => {
 
 
     return (
-        <section className='login-nav animeRight'>
+        <section className='login-nav animate' data-anime='right'>
             <h2>Perdeu a senha?</h2>
             {data ? <form className='login-form'><p style={{color: '#4c1'}}>{data}</p></form>
             :

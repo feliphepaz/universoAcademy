@@ -70,9 +70,13 @@ export const UserStorage = ({ children }) => {
     autoLogin();
   }, [userLogout]);
 
+  function toTop() {
+    window.scrollTo(0,0);
+  }
+
   return (
     <UserContext.Provider
-      value={{ userLogin, userLogout, data, setData, error, setError, loading, setLoading, login }}
+      value={{ userLogin, userLogout, data, setData, error, setError, loading, setLoading, login, toTop }}
     >
       {children}
     </UserContext.Provider>

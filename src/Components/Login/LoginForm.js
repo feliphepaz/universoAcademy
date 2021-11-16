@@ -9,7 +9,7 @@ const LoginForm = () => {
     const username = useForm();
     const password = useForm();
 
-    const { userLogin, error, loading } = React.useContext(UserContext);
+    const { userLogin, error, loading, toTop } = React.useContext(UserContext);
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -20,7 +20,7 @@ const LoginForm = () => {
     }
 
     return (
-        <section className='login-nav animeRight'>
+        <section className='login-nav animate' data-anime='right'>
             <h2>Login</h2>
             <form action='' className='login-form' onSubmit={handleSubmit}>
                 <Input type='text' label='Usuário' name='usuario' {...username} />
@@ -31,7 +31,7 @@ const LoginForm = () => {
             </form>
             <div className='login-create-box'>
                 <p>Ainda não possui conta? Cadastre-se!</p>
-                <Link className='cta' to='cadastrar'>Cadastrar</Link>
+                <Link className='cta' to='cadastrar' onClick={toTop}>Cadastrar</Link>
             </div>
         </section>
     )

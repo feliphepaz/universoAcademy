@@ -8,6 +8,23 @@ import Footer from './Components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { UserStorage } from './UserContext';
 
+function animeScroll() {
+    const target = document.querySelectorAll('[data-anime]');
+    const animationClass = 'animate';
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+    target.forEach(element => {
+        if (windowTop > element.offsetTop) {
+            element.classList.add(animationClass);
+        } else if(element.classList.contains(animationClass)) {
+            element.classList.remove(animationClass);
+        }
+    })
+}
+
+animeScroll();
+
+window.addEventListener('scroll', animeScroll);
+
 const App = () => {
     return (
         <div className='App'>
