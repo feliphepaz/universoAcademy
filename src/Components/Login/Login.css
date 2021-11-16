@@ -37,3 +37,10 @@
 .login-create-box p {
   margin-bottom: 40px;
 }
+
+.lost-link {
+  display: block;
+  margin-top: 40px;
+  font-size: var(--size12);
+  text-decoration: underline;
+}

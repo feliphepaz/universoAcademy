@@ -26,7 +26,8 @@ const LoginForm = () => {
                 <Input type='text' label='Usuário' name='usuario' {...username} />
                 <Input type='password' label='Senha' name='senha' {...password} />
                 {loading ? <Button disabled>Carregando...</Button> : <Button>Entrar</Button>}
-                {error && <p className='error' style={{'marginTop': '10px', 'marginBottom' : '0px'}}>{error}</p>}
+                {error && <p className='error' style={{ 'marginTop': '10px', 'marginBottom': '0px' }}>{error}</p>}
+                <Link className='lost-link' to='perdi-senha'>Perdeu a senha?</Link>
             </form>
             <div className='login-create-box'>
                 <p>Ainda não possui conta? Cadastre-se!</p>
