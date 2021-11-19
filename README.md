@@ -1,5 +1,5 @@
 # Universo Academy 🪐
-[Acesse aqui!]()
+[Acesse aqui!]() (em breve)
 <br>
 <br>
 A Universo Academy é uma futura plataforma de cursos EAD voltadas ao desenvolvimento pessoal de seus alunos, mais especificamente abordando o tema liderança como principal pauta de suas aulas.
