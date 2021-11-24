@@ -51,19 +51,7 @@ function Header() {
             <li><Link to='/'>Saiba mais</Link></li>
             <li><Link to='/'>Tire suas dúvidas</Link></li>
             <li>
-              {data ?
-                <Link className='btn' to='conta' onClick={toTopAndClose}>{data ? 'Ver aulas' : 'Login'}</Link>
-                :
-                <Link className='btn' to='login' onClick={toTopAndClose}>Login</Link>}
-            </li>
-            <li>
-              {data ?
-                <div class='logged'>
-                  <legend class='username-header'>{data.username}</legend>
-                  <Link className='btn' to='login' onClick={() => {userLogout(); toTopAndClose();}}>Sair</Link>
-                </div>
-                :
-                <Link className='cta' to='login/cadastrar' onClick={toTopAndClose}>Faça parte!</Link>}
+                <Link className='cta' to='login/assine' onClick={toTopAndClose}>Faça parte!</Link>
             </li>
           </ul>
         </nav>
