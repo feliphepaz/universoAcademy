@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Account from './Components/Account/Account';
+import NotFound from './Components/NotFound';
 import Footer from './Components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { UserStorage } from './UserContext';
@@ -36,6 +37,7 @@ const App = () => {
                                 <Route path="/" element={<Home />} />
                                 <Route path="login/*" element={<Login />} />
                                 <Route path="conta" element={<Account />} />
+                                <Route path="*" element={<NotFound />} />
                             </Routes>
                         </main>
                     <Footer />
