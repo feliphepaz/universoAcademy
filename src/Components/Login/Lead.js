@@ -3,8 +3,10 @@ import Input from '../Form/Input'
 import Button from '../Form/Button';
 import useForm from '../../Hooks/useForm';
 import useFetch from '../../Hooks/useFetch';
+import { useNavigate } from 'react-router-dom';
 
 const Lead = () => {
+    const navigate = useNavigate();
     const email = useForm('email');
 
     const { error, loading } = useFetch();
@@ -21,7 +23,7 @@ const Lead = () => {
             fetch('/subscribe', fetchData)
                 .then(res => {
                     if (res.ok) {
-                        console.log('email cadastrado');
+                        navigate('/login/sucesso');
                     }
             })
         }
