@@ -13,6 +13,17 @@ const Lead = () => {
         e.preventDefault();
         if (email.validate()) {
             // Yeh!
+            let fetchData = {
+                method: 'POST',
+                body: JSON.stringify({ email: email.value, js: true }),
+                headers: {"Content-Type": "application/json"}
+            }
+            fetch('/subscribe', fetchData)
+                .then(res => {
+                    if (res.ok) {
+                        console.log('email cadastrado');
+                    }
+            })
         }
     }
 
@@ -20,7 +31,7 @@ const Lead = () => {
         <section className='login-nav animate' data-anime='right'>
             <h2>Receba novidades!</h2>
             <form action='' className='login-form' onSubmit={handleSubmit}>
-                <Input type='email' label='E-mail' name='name' {...email} />
+                <Input type='email' label='E-mail' name='email' id='email' {...email} />
                 {loading ? <Button disabled>Cadastrando...</Button> : <Button>Cadastrar</Button>}
                 {error && <p className='error' style={{'marginTop': '10px', 'marginBottom' : '0px'}}>{error}</p>}
             </form>
