@@ -20,6 +20,7 @@
   "scripts": {
     "serve": "node server",
     "dev": "nodemon server",
+    "start": "react-scripts start",
     "build": "react-scripts build"
   },
   "eslintConfig": {

@@ -48,8 +48,8 @@ function Header() {
         <nav className='menu'>
         <button className='menu-mobile' style={menuMobile ? {'display': 'block'} : {'display': 'none'}} onClick={() => setHandleMenu(handleMenu => !handleMenu)}><img src={handleMenu ? closeMenu : openMenu}></img></button>
           <ul style={handleMenu || !menuMobile ? {'display': 'flex'} : {'display': 'none'}}>
-            <li><Link to='/'>Saiba mais</Link></li>
-            <li><Link to='/'>Tire suas dúvidas</Link></li>
+            <li><Link to='sobre' onClick={toTopAndClose}>Saiba mais</Link></li>
+            <li><Link to='faq' onClick={toTopAndClose}>Tire suas dúvidas</Link></li>
             <li>
                 <Link className='cta' to='login/assine' onClick={toTopAndClose}>Faça parte!</Link>
             </li>

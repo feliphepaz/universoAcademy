@@ -4,6 +4,8 @@ import Header from './Components/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Account from './Components/Account/Account';
+import More from './Components/More';
+import FAQ from './Components/FAQ';
 import NotFound from './Components/NotFound';
 import Footer from './Components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -36,6 +38,8 @@ const App = () => {
                             <Routes>
                                 <Route path="/" element={<Home />} />
                                 <Route path="login/*" element={<Login />} />
+                                <Route path="sobre" element={<More />} />
+                                <Route path="faq" element={<FAQ />} />
                                 {/* <Route path="conta" element={<Account />} /> */}
                                 <Route path="*" element={<NotFound />} />
                             </Routes>
