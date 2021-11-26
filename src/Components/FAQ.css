@@ -1,0 +1,92 @@
+.faq {
+    background: linear-gradient(0deg, rgba(0, 0, 58, 0.8), rgba(0, 0, 58, 0.8)), url(../Assets/rocketlauncher.jpg) center center no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+}
+
+.faq .container {
+    flex-direction: column;
+}
+
+.faq .container h2 {
+    font-size: var(--size72);
+    max-width: 400px;
+    color: var(--primary3);
+}
+
+.questions-answers > p, .more-questions p {
+    line-height: var(--lineHeight18);
+    color: var(--base1);
+    margin-top: 60px;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.faq-ul {
+    width: 600px;
+    margin-bottom: 100px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+    z-index: 20;
+}
+
+.faq-ul li + li {
+    margin-top: 60px;
+}
+
+.answer {
+    margin-top: -15px;
+    position: relative;
+    z-index: 0;
+    padding: 35px 20px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
+    display: none;
+    line-height: var(--lineHeight18);
+    color: var(--base1);
+    background: var(--primary3);
+}
+
+.answer-active {
+    display: block;
+}
+
+.faq-display {
+    display: flex;
+    justify-content: center;
+}
+
+.more-questions {
+    margin-top: 60px;
+    width: 20%;
+    margin-left: 60px;
+    background: var(--primary3);
+    align-self: flex-start;
+    padding: 40px;
+    box-shadow: 0px 0px 25px var(--primary3);
+    border-radius: 20px;
+}
+
+.more-questions p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.more-questions .social {
+    display: flex;
+    justify-content: center;
+}
+
+.more-questions .social a img {
+    width: 40px;
+}
+
+.more-questions .social a + a img {
+    margin-left: 10px;
+}
