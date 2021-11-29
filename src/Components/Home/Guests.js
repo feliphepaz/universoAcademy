@@ -95,7 +95,7 @@ const Guests = () => {
                     ))}
                 </ul>
                 <p className='call'>Não perca essa chance e se inscreva agora mesmo. É gratuito!</p>
-                <Link className='cta' to='login/cadastrar' onClick={toTop}>Faça parte!</Link>
+                <Link className='cta' to='assine/sucesso' onClick={toTop}>Faça parte!</Link>
             </div>
         </section>
     )

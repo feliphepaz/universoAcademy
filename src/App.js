@@ -3,6 +3,8 @@ import './App.css'
 import Header from './Components/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
+import Lead from './Components/Login/Lead';
+import LeadSuccess from './Components/Login/LeadSuccess';
 import Account from './Components/Account/Account';
 import More from './Components/More';
 import FAQ from './Components/FAQ';
@@ -37,7 +39,8 @@ const App = () => {
                         <main className='AppBody'>
                             <Routes>
                                 <Route path="/" element={<Home />} />
-                                <Route path="login/*" element={<Login />} />
+                                <Route path="assine" element={<Lead />} />
+                                <Route path="assine/sucesso" element={<LeadSuccess/>} />
                                 <Route path="sobre" element={<More />} />
                                 <Route path="faq" element={<FAQ />} />
                                 {/* <Route path="conta" element={<Account />} /> */}

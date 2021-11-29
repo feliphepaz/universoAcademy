@@ -10,12 +10,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'build')))
 
 app.post('/subscribe', (req, res) => {
-    const { email, js } = req.body;
+    const { firstName, phone, email, js } = req.body;
     const chimpData = {
         members: [
             {
                 email_address: email,
-                status: 'subscribed'
+                status: 'subscribed',
+                merge_fields: {
+                    FNAME: firstName,
+                    PHONE: phone
+                }
             }
         ]
     }
@@ -38,8 +42,6 @@ app.post('/subscribe', (req, res) => {
             } else {
                 if (js) {
                     res.sendStatus(200);
-                } else {
-                    res.redirect('/sucess.html');
                 }
             }
         })

@@ -51,7 +51,7 @@ function Header() {
             <li><Link to='sobre' onClick={toTopAndClose}>Saiba mais</Link></li>
             <li><Link to='faq' onClick={toTopAndClose}>Tire suas dúvidas</Link></li>
             <li>
-                <Link className='cta' to='login/assine' onClick={toTopAndClose}>Faça parte!</Link>
+                <Link className='cta' to='assine' onClick={toTopAndClose}>Faça parte!</Link>
             </li>
           </ul>
         </nav>

@@ -9,17 +9,19 @@
   background: url(../../Assets/orbita.jpg) no-repeat right;
   background-size: cover;
   width: 50%;
-  height: 100vh;
+  height: 1010px;
 }
 
 .login-content {
   margin: 0 auto;
+  margin-top: 160px;
+  margin-bottom: 100px;
 }
 
 .login-content h2 {
   color: var(--base1);
   font-size: var(--size48);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .login-form {
@@ -45,6 +47,12 @@
   text-decoration: underline;
 }
 
+.login-nav p {
+  max-width: 500px;
+  margin-bottom: 40px;
+  line-height: var(--lineHeight18);
+}
+
 @media (max-width: 1146px) {
   .login {
     flex-direction: column;
@@ -63,5 +71,12 @@
   }
   .login-content {
     margin: 0 40px;
+  }
+}
+
+@media (max-width: 390px) {
+  .login-form {
+    border: none;
+    padding: 0px;
   }
 }
