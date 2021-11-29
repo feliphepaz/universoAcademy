@@ -77,3 +77,24 @@
 .course-progress h3:last-child {
     margin-bottom: 0px;
 }
+
+@media (max-width: 1110px) {
+    .course-progress::before {
+        display: none;
+    }
+}
+
+@media (max-width: 677px) {
+    .lessons-container {
+        flex-direction: column;
+    }
+    .lessons-container div:first-child {
+        width: 100%;
+    }
+    .course-about p {
+        max-width: 100%;
+    }
+    .course-progress {
+        margin-top: 40px;
+    }
+}

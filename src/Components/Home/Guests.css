@@ -102,4 +102,29 @@
     width: 100%;
     text-align: center;
     padding: 4px 0;
-} 
+}
+
+@media (max-width: 1440px) {
+    .leaders {
+        justify-content: center;
+    }
+    .leaders li:nth-child(5n+1) {
+        margin-left: 40px;
+    }
+    .leaders li:nth-child(4n+1) {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1167px) {
+    .leaders {
+        margin-left: -40px;
+    }
+    .leaders li:nth-child(4n+1) {
+        margin-left: 40px;
+    }
+}
+
+
+
+

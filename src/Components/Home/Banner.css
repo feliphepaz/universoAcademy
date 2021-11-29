@@ -29,7 +29,7 @@
 
 .display {
     font-family: var(--fontDisplay);
-    font-size: 17em;
+    font-size: 17vw;
     color: var(--primary3);
     letter-spacing: 5px;
 }
@@ -41,4 +41,41 @@
 .ilustration {
     position: absolute;
     right: 200px;
+}
+
+@media (max-width: 1490px) {
+    .ilustration {
+        right: 0px;
+    }
+    .ilustration img {
+        width: 500px;
+    }   
+}
+
+@media (max-width: 968px) {
+    .ilustration {
+        position: static;
+    }
+    .ilustration img {
+        width: 800px;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-text .cta {
+        display: flex;
+    }
+}
+
+@media (max-width: 470px) {
+    .ilustration {
+        display: none;
+    }
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-text .cta {
+        align-self: flex-start;
+    }
 }

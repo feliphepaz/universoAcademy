@@ -32,3 +32,33 @@
     position: absolute;
     right: 0;
 }
+
+@media (max-width: 1440px) {
+    .about-img img {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1246px) {
+    .about-img img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 1055px) {
+    .about-img {
+        display: none;
+    }
+    .about-text h2 {
+        max-width: 100%;
+    }
+    .about-text p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 479px) {
+    .about-text h2 {
+        font-size: var(--size48);
+    }
+}

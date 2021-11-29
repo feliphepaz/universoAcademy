@@ -29,3 +29,13 @@
 .benefits-itens li + li {
     margin-left: 80px;
 }
+
+@media (max-width: 868px) {
+    .benefits-itens{
+        flex-direction: column;
+    }
+    .benefits-itens li + li {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+}

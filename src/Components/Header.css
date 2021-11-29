@@ -63,6 +63,15 @@
         margin-top: 40px;
     }
     .menu ul li:last-child {
-        margin-top: 60px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 345px) {
+    .menu ul li:last-child {
+        margin-top: 40px;
+    }
+    .menu ul li .cta {
+        display: flex;
     }
 }
