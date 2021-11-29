@@ -90,3 +90,24 @@
 .more-questions .social a + a img {
     margin-left: 10px;
 }
+
+@media (max-width: 1165px) {
+    .faq-display {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .more-questions {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .faq-ul {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .faq .container h2 {
+        font-size: var(--size48);
+    }
+}

@@ -44,3 +44,24 @@
   font-size: var(--size12);
   text-decoration: underline;
 }
+
+@media (max-width: 1146px) {
+  .login {
+    flex-direction: column;
+  }
+  .bg-img {
+    display: none;
+  }
+  .login-content {
+    padding: 200px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-form {
+    width: 100%;
+  }
+  .login-content {
+    margin: 0 40px;
+  }
+}
