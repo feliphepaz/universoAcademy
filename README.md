@@ -1,6 +1,4 @@
 # Universo Academy 🪐
-[Acesse aqui!]() (em breve)
-
 A Universo Academy é uma futura plataforma de cursos EAD voltadas ao desenvolvimento pessoal de seus alunos, mais especificamente abordando o tema liderança como principal pauta de suas aulas. Sua principal inspiração são sites de instituições de ensino online como a da Rock Content.
 <br>
 <br>
