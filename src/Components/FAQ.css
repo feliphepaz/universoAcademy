@@ -91,6 +91,10 @@
     margin-left: 10px;
 }
 
+.faq-ul li p a {
+    text-decoration: underline;
+}
+
 @media (max-width: 1165px) {
     .faq-display {
         flex-direction: column;

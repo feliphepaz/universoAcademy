@@ -89,7 +89,7 @@ const More = () => {
                                 </span>
                                 Curso Online Gratuito
                             </h3>
-                            <p>Vivamus accumsan erat id nunc gravida, id rhoncus elit malesuada. Proin convallis justo tempus urna finibus ornare. Nulla facilisi. Sed et lacinia nulla.</p>
+                            <p>Como primeira etapa da Universo Academy, a nossa pretensão é estimular o conhecimento através de um curso gratuito com conteúdo enriquecedor e importante para a sua carreira.</p>
                             <div>
                                 <img src={Space}></img>
                             </div>
@@ -101,7 +101,7 @@ const More = () => {
                                 </span>
                                 Evento Presencial
                             </h3>
-                            <p>Vivamus accumsan erat id nunc gravida, id rhoncus elit malesuada. Proin convallis justo tempus urna finibus ornare. Nulla facilisi. Sed et lacinia nulla.</p>
+                            <p>Temos também como objetivo a organização de um evento voltado à liderança, com grandes líderes do mercado em diversos segmentos. </p>
                             <div>
                                 <img src={Observatory}></img>
                             </div>
@@ -113,7 +113,7 @@ const More = () => {
                                 </span>
                                 Curso Online Completo
                             </h3>
-                            <p>Vivamus accumsan erat id nunc gravida, id rhoncus elit malesuada. Proin convallis justo tempus urna finibus ornare. Nulla facilisi. Sed et lacinia nulla.</p>
+                            <p>Pensando no curso gratuito como um protótipo de algo muito maior, a nossa pretensão é desenvolver um curso que abranja todos os universos da liderança.</p>
                             <div>
                                 <img src={Asteroid}></img>
                             </div>
@@ -125,7 +125,7 @@ const More = () => {
                                 </span>
                                 Expansão como Instituição de Ensino
                             </h3>
-                            <p>Vivamus accumsan erat id nunc gravida, id rhoncus elit malesuada. Proin convallis justo tempus urna finibus ornare. Nulla facilisi. Sed et lacinia nulla.</p>
+                            <p>Não descansaremos até expandir completamente esse universo de conhecimento. Aqui a Universo Academy se torna uma instituição de ensino completa.</p>
                             <div>
                                 <img src={Galaxy}></img>
                             </div>

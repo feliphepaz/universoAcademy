@@ -13,7 +13,7 @@ const Banner = () => {
         <div className='banner-text animate' data-anime='left'>
           <h1 className='display'>Seja um líder!</h1>
           <p>A Universo Academy é uma das primeiras plataformas do mercado focada em treinamento de lideranças.</p>
-          <Link className='cta' to='login/cadastrar' onClick={toTop}>Faça parte!</Link>
+          <Link className='cta' to='assine' onClick={toTop}>Faça parte!</Link>
         </div>
         <div className='ilustration animate' data-anime='right'>
           <img src={ilustration}></img>

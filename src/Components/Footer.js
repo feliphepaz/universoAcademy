@@ -16,9 +16,8 @@ const Footer = () => {
                     Todos os direitos reservados.
                 </p>
                 <nav className='social'>
-                    <a href='#'><img src={facebook}></img></a>
-                    <a href='#'><img src={twitter}></img></a>
-                    <a href='#'><img src={instagram}></img></a>
+                    <a href='https://www.facebook.com/Universo-Academy-104939288625589' target='_blank'><img src={facebook}></img></a>
+                    <a href='https://www.instagram.com/universoacademy_/' target='_blank'><img src={instagram}></img></a>
                 </nav>
             </div>
         </footer>
