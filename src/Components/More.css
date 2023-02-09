@@ -1,0 +1,249 @@
+.more {
+    background: var(--primary1);
+    padding-top: 200px;
+}
+
+.more .container {
+    flex-direction: column;
+}
+
+.history {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 140px;
+}
+
+.history h2, .stages h2 {
+    font-size: var(--size72);
+    max-width: 400px;
+    color: var(--primary3);
+}
+
+.history p {
+    line-height: var(--lineHeight18);
+    color: var(--base2);
+    max-width: 600px;
+    margin-left: 30px;
+}
+
+.history p strong {
+    background: var(--primary2);
+    padding: 0px 3px;
+}
+
+.solution {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 58, 0.8), rgba(0, 0, 58, 0.8)), url(../Assets/spacerocks.jpg) center center no-repeat;
+    padding: 100px 0;
+}
+
+.solution .container div {
+    width: 100%;
+}
+
+.solution .container div + div {
+    margin-top: 100px;
+}
+
+.solution .container div > p {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.solution .container div ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.solution .container div ul li p {
+    font-size: var(--size48);
+}
+
+.solution .container div ul li h3 {
+    max-width: 700px;
+    line-height: var(--lineHeight18);
+    color: var(--base1);
+    margin-top: 5px;
+}
+
+.solution-data ul li {
+    max-width: 240px;
+    text-align: center;
+}
+
+.solution-data ul li p {
+    color: var(--primary3);
+}
+
+.solution-profiles > p {
+    max-width: 630px;
+    line-height: var(--lineHeight18);
+    color: var(--base1);
+    margin: 0 auto;
+}
+
+.solution-profiles ul li {
+	background: var(--primary3);
+    border-radius: 20px;
+    width: 300px;
+    padding: 60px 0px;
+    box-shadow: 0px 0px 25px var(--primary3);
+}
+
+.solution-profiles ul li img {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.solution-profiles ul li h3 {
+    text-align: center;
+    margin-top: 10px !important;
+}
+
+.stages {
+    padding-bottom: 100px;
+}
+
+.stages .container {
+    align-items: flex-start;
+}
+
+.stages h2 {
+    max-width: 100%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.stages .container > p {
+    line-height: var(--lineHeight18);
+    color: var(--base2);
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.stages .container ul {
+    width: 100%;
+}
+
+.stages .container ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--base1);
+    padding: 40px 60px 40px 0px;
+    box-shadow: 0px 0px 25px var(--primary3);
+}
+
+.stages .container ul li + li {
+    margin-top: 60px;
+}
+
+.stages .container ul li h3 {
+    display: flex;
+    align-items: center;
+    max-width: 100px;
+    line-height: 3rem;
+    color: var(--primary4);
+    text-shadow: -2px 2px 0px var(--primary2);
+    margin-right: 300px;
+    font-size: var(--size48);
+}
+
+.stages .container ul li h3 span {
+    color: var(--primary3);
+    font-size: 10rem;
+    margin-right: 20px;
+    text-shadow: -5px 5px 0px var(--primary2), -10px 10px 0px var(--primary4), -15px 15px 0px var(--primary3);
+}
+
+.stages .container ul li img {
+    width: 200px;
+}
+
+.stages .container ul li p {
+    line-height: var(--lineHeight18);
+    color: var(--base2);
+    max-width: 500px;
+}
+
+@media (max-width: 760px) {
+    .history {
+        flex-direction: column;
+    }
+    .history h2 {
+        max-width: 100%;
+    }
+    .history p {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .solution-profiles ul li {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1158px) {
+    .solution-profiles ul li {
+        width: 200px;
+    }
+}
+
+@media (max-width: 940px) {
+    .solution-profiles ul {
+        flex-direction: column;
+    }
+    .solution-profiles ul li {
+        width: 100%;
+    }
+    .solution-profiles ul li + li {
+        margin-top: 40px;
+    }
+    .solution-profiles ul li h3 {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .stages .container ul li div {
+        display: none;
+    }
+    .stages .container ul li p {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .stages .container ul li {
+        flex-direction: column;
+        padding: 40px;
+    }
+    .stages .container ul li p {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 690px) {
+    .solution-data ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .solution-data ul li + li {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 470px) {
+    .stages .container h2, .history h2 {
+        font-size: var(--size48);
+    }
+    .stages .container ul li h3 {
+        flex-direction: column;
+        line-height: normal;
+        margin-right: 0px;
+    }
+}
