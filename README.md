@@ -11,5 +11,5 @@ No sistema de login e cadastro, houve a necessidade da construção de uma API u
 O JSX também foi um elemento crucial para o desenvolvimento, pois evitou qualquer repetição do código usando métodos de iteração como o _map()_. Além disso, para compilar e dar manutenção, também foi utilizado formas já bastante conhecidas de automação front-end, como o uso do Webpack, Babel (requisito para o React), Git, entre outros.
 #
 #### Créditos / Agradecimentos
-_Projeto desenvolvido para a agência Formulaviral._
+_Projeto desenvolvido para a Agência Formula Group._
 
